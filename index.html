@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asad | Efficiency Architect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+    <div class="n8n-bg" aria-hidden="true">
+        <svg class="n8n-bg-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <g class="n8n-wires" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                <path class="n8n-path" d="M 72 480 H 268 V 196 H 508 V 368 H 756" />
+                <path class="n8n-path n8n-path--b" d="M 188 720 H 432 V 472 H 916 V 228 H 1228" />
+                <path class="n8n-path n8n-path--c" d="M 1320 640 Q 1050 520 880 560 T 504 520 L 304 520 V 300" />
+                <path class="n8n-path" d="M 1040 140 C 1180 260 1260 420 1420 300 S 1500 540 1488 700" />
+                <path class="n8n-path n8n-path--b" d="M 48 260 H 210 V 108 H 628 V 288 H 864 V 420" />
+                <path class="n8n-path n8n-path--c" d="M 756 368 H 1024 V 560 H 1280 V 440" />
+            </g>
+            <g class="n8n-dots" fill="currentColor">
+                <circle class="n8n-node" cx="268" cy="480" r="4" />
+                <circle class="n8n-node" cx="508" cy="196" r="4" />
+                <circle class="n8n-node" cx="756" cy="368" r="4" />
+                <circle class="n8n-node" cx="432" cy="720" r="4" />
+                <circle class="n8n-node" cx="916" cy="472" r="4" />
+                <circle class="n8n-node" cx="1228" cy="228" r="4" />
+                <circle class="n8n-node" cx="304" cy="300" r="4" />
+                <circle class="n8n-node" cx="864" cy="420" r="4" />
+                <circle class="n8n-node" cx="1280" cy="440" r="4" />
+                <circle class="n8n-node" cx="1420" cy="300" r="4" />
+            </g>
+        </svg>
+    </div>
+
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <nav class="nav" aria-label="Primary">
+            <a class="logo" href="#">Asad<span>.</span></a>
+            <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+            <div class="nav-links" id="navMenu">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact" class="btn-main">Hire me</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-zyan reveal" id="about">
+        <div class="hero-shell">
+        <div class="hero-content">
+            <p class="hero-eyebrow">Automation &amp; AI</p>
+            <h1>Hi, I'm Asad</h1>
+            <h2>AI Workflow and <span>Automation Solutions</span></h2>
+            <p class="hero-lead">Automation developer with 2+ years of experience building powerful n8n workflows and AI-driven solutions. I specialize in custom automations, integrations, and AI agents that streamline processes, save time, and scale efficiently. Every solution is tailored for reliability, performance, and real business impact.</p>
+
+            <div class="hero-btns-wrapper">
+                <a href="#" class="btn-cv">Download CV <i class="fas fa-download" aria-hidden="true"></i></a>
+
+                <button type="button" class="btn-video" id="playAudioBtn" aria-pressed="false" aria-label="Play voice introduction">
+                    <span class="play-icon" aria-hidden="true">
+                        <i class="fas fa-play" id="audioIcon"></i>
+                    </span>
+                    <span id="audioText">Listen to my voice</span>
+                </button>
+
+                <audio id="myVoice" preload="metadata">
+                    <source src="voice/1773746198864545416bbonpvdf-voicemaker.in-speech.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="expertise-container reveal">
+                <p class="expertise-title">Expert in automation platforms</p>
+                <div class="expertise-tags">
+                    <span class="tag-item">n8n.io</span>
+                    <span class="tag-item">make.com</span>
+                    <span class="tag-item">Zapier</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-visual reveal">
+            <div class="service-card">
+                <div class="card-image-container">
+                    <img src="image.1/WhatsApp Image 2026-03-30 at 8.24.19 PM (1).jpeg" alt="Portrait — n8n automation expert">
+                    <div class="card-overlay" aria-hidden="true"></div>
+                    <div class="card-copy">
+                        <h3 class="card-copy-title">n8n automation</h3>
+                        <p class="card-copy-desc">Streamline workflows with powerful automation</p>
+                    </div>
+                    <a href="#top" class="card-corner-btn" aria-label="Back to top"><i class="fas fa-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="section capabilities reveal" id="services">
+        <div class="capability-header">
+            <h2 class="section-title">Automation capabilities</h2>
+            <p class="section-subtitle">End-to-end workflow design, integrations, and data pipelines built to last.</p>
+        </div>
+
+        <div class="capability-grid">
+            <article class="c-card">
+                <div class="c-header">
+                    <div class="c-icon-box"><i class="fas fa-network-wired" aria-hidden="true"></i></div>
+                    <div class="c-title-group">
+                        <h3>n8n workflow automation</h3>
+                        <p>Expert workflow builder</p>
+                        <span class="c-badge"><i class="far fa-calendar-check" aria-hidden="true"></i> 150+ workflows</span>
+                    </div>
+                </div>
+                <div class="c-skills">
+                    <div class="c-skill-item">
+                        <span><i class="fas fa-bezier-curve" aria-hidden="true"></i> Workflow design</span>
+                        <div class="c-bar"><div class="c-fill" style="width: 100%;"></div></div>
+                    </div>
+                    <div class="c-skill-item">
+                        <span><i class="fas fa-bug-slash" aria-hidden="true"></i> Error handling</span>
+                        <div class="c-bar"><div class="c-fill" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="c-skill-item">
+                        <span><i class="fas fa-gauge-high" aria-hidden="true"></i> Performance optimization</span>
+                        <div class="c-bar"><div class="c-fill" style="width: 85%;"></div></div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="c-card">
+                <div class="c-header">
+                    <div class="c-icon-box"><i class="fas fa-project-diagram" aria-hidden="true"></i></div>
+                    <div class="c-title-group">
+                        <h3>API integration</h3>
+                        <p>Integration specialist</p>
+                        <span class="c-badge"><i class="far fa-calendar-check" aria-hidden="true"></i> 75+ integrations</span>
+                    </div>
+                </div>
+                <div class="c-skills">
+                    <div class="c-skill-item">
+                        <span><i class="fas fa-code" aria-hidden="true"></i> REST APIs</span>
+                        <div class="c-bar"><div class="c-fill" style="width: 100%;"></div></div>
+                    </div>
+                    <div class="c-skill-item">
+                        <span><i class="fas fa-lock" aria-hidden="true"></i> Authentication</span>
+                        <div class="c-bar"><div class="c-fill" style="width: 95%;"></div></div>
+                    </div>
+                    <div class="c-skill-item">
+                        <span><i class="fas fa-table-columns" aria-hidden="true"></i> Data mapping</span>
+                        <div class="c-bar"><div class="c-fill" style="width: 80%;"></div></div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="c-card">
+                <div class="c-header">
+                    <div class="c-icon-box"><i class="fas fa-database" aria-hidden="true"></i></div>
+                    <div class="c-title-group">
+                        <h3>Data processing</h3>
+                        <p>Data transformation expert</p>
+                        <span class="c-badge"><i class="far fa-calendar-check" aria-hidden="true"></i> 50+ pipelines</span>
+                    </div>
+                </div>
+                <div class="c-skills">
+                    <div class="c-skill-item">
+                        <span><i class="fas fa-broom" aria-hidden="true"></i> Data cleaning</span>
+                        <div class="c-bar"><div class="c-fill" style="width: 100%;"></div></div>
+                    </div>
+                    <div class="c-skill-item">
+                        <span><i class="fas fa-arrows-spin" aria-hidden="true"></i> Transformation</span>
+                        <div class="c-bar"><div class="c-fill" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="c-skill-item">
+                        <span><i class="fas fa-layer-group" aria-hidden="true"></i> Aggregation</span>
+                        <div class="c-bar"><div class="c-fill" style="width: 75%;"></div></div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="c-card">
+                <div class="c-header">
+                    <div class="c-icon-box"><i class="fas fa-cubes" aria-hidden="true"></i></div>
+                    <div class="c-title-group">
+                        <h3>Custom n8n nodes</h3>
+                        <p>Node developer</p>
+                        <span class="c-badge"><i class="far fa-calendar-check" aria-hidden="true"></i> 100+ pipelines</span>
+                    </div>
+                </div>
+                <div class="c-skills">
+                    <div class="c-skill-item">
+                        <span><i class="fas fa-screwdriver-wrench" aria-hidden="true"></i> Node development</span>
+                        <div class="c-bar"><div class="c-fill" style="width: 100%;"></div></div>
+                    </div>
+                    <div class="c-skill-item">
+                        <span><i class="fas fa-plug" aria-hidden="true"></i> Integration</span>
+                        <div class="c-bar"><div class="c-fill" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="c-skill-item">
+                        <span><i class="fas fa-book" aria-hidden="true"></i> Documentation</span>
+                        <div class="c-bar"><div class="c-fill" style="width: 75%;"></div></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="testimonial-section reveal" aria-label="Client testimonials">
+        <div class="testimonial-inner">
+            <div class="header-content">
+                <h2 class="section-title">More than 150+ happy <span class="text-accent">customers</span></h2>
+                <p class="section-subtitle testimonial-intro">Strategic automation and integrations that set you apart—reliable, measurable, and built for scale.</p>
+            </div>
+
+            <div class="cards-container">
+                <div class="cards-wrapper" id="testimonialTrack">
+                    <article class="t-card">
+                        <div class="t-card-header">
+                            <div class="t-avatar" aria-hidden="true">S</div>
+                            <div class="t-user-info">
+                                <h3>Sarah Johnson</h3>
+                                <p>Marketing Director, TechFlow Inc.</p>
+                                <span class="t-status">Verified project</span>
+                            </div>
+                        </div>
+                        <p class="t-desc">The ML analytics solution built using n8n workflows was excellent. It automated our data processes and delivered clear, real-time insights for better decision-making.</p>
+                        <div class="t-stats">
+                            <div class="stat-item">
+                                <div class="stat-row"><span>n8n automation</span></div>
+                                <div class="segments"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span></div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-row"><span>API integration</span></div>
+                                <div class="segments"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span></div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-row"><span>ML analytics</span></div>
+                                <div class="segments"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span></span></div>
+                            </div>
+                        </div>
+                        <a href="image.1/Screenshot at Mar 17 13-09-14.png" target="_blank" rel="noopener noreferrer" class="view-image btn-view">View project ↗</a>
+                    </article>
+
+                    <article class="t-card">
+                        <div class="t-card-header">
+                            <div class="t-avatar" aria-hidden="true">J</div>
+                            <div class="t-user-info">
+                                <h3>Jessica Thompson</h3>
+                                <p>Operations Manager, DataSync Solutions</p>
+                                <span class="t-status">Verified project</span>
+                            </div>
+                        </div>
+                        <p class="t-desc">Asad did a great job on this project. He clearly understood the goal of replicating the DeepResearch feature and delivered everything as expected.</p>
+                        <div class="t-stats">
+                            <div class="stat-item">
+                                <div class="stat-row"><span>Deep research agent</span></div>
+                                <div class="segments"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span></div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-row"><span>Workflow design</span></div>
+                                <div class="segments"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span></div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-row"><span>OpenAI o3</span></div>
+                                <div class="segments"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span></span></div>
+                            </div>
+                        </div>
+                        <a href="image.1/2number.png" target="_blank" rel="noopener noreferrer" class="view-image btn-view">View project ↗</a>
+                    </article>
+
+                    <article class="t-card">
+                        <div class="t-card-header">
+                            <div class="t-avatar" aria-hidden="true">D</div>
+                            <div class="t-user-info">
+                                <h3>David Rodriguez</h3>
+                                <p>Content Manager, MediaPulse</p>
+                                <span class="t-status">Verified project</span>
+                            </div>
+                        </div>
+                        <p class="t-desc">Asad did an excellent job building a RAG chatbot for our company documents using Google Drive and Gemini.</p>
+                        <div class="t-stats">
+                            <div class="stat-item">
+                                <div class="stat-row"><span>Google Drive</span></div>
+                                <div class="segments"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span></div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-row"><span>Workflow design</span></div>
+                                <div class="segments"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span></div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-row"><span>Gemini</span></div>
+                                <div class="segments"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span></span></div>
+                            </div>
+                        </div>
+                        <a href="image.1/3number.png" target="_blank" rel="noopener noreferrer" class="view-image btn-view">View project ↗</a>
+                    </article>
+
+                    <article class="t-card">
+                        <div class="t-card-header">
+                            <div class="t-avatar" aria-hidden="true">E</div>
+                            <div class="t-user-info">
+                                <h3>Emily Davis</h3>
+                                <p>Content Manager, HealthMedia</p>
+                                <span class="t-status">Verified project</span>
+                            </div>
+                        </div>
+                        <p class="t-desc">Asad did a great job generating AI videos with audio using Sora 2 and handling the TikTok uploads.</p>
+                        <div class="t-stats">
+                            <div class="stat-item">
+                                <div class="stat-row"><span>AI videos</span></div>
+                                <div class="segments"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span></div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-row"><span>Workflow design</span></div>
+                                <div class="segments"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span></div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-row"><span>Sora 2</span></div>
+                                <div class="segments"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span></span></div>
+                            </div>
+                        </div>
+                        <a href="image.1/4jj.png" target="_blank" rel="noopener noreferrer" class="view-image btn-view">View project ↗</a>
+                    </article>
+
+                    <article class="t-card">
+                        <div class="t-card-header">
+                            <div class="t-avatar" aria-hidden="true">R</div>
+                            <div class="t-user-info">
+                                <h3>Robert Breen</h3>
+                                <p>Marketing Director, TechFlow Inc.</p>
+                                <span class="t-status">Verified project</span>
+                            </div>
+                        </div>
+                        <p class="t-desc">Asad did an excellent job generating AI videos with audio using Sora 2 and uploading them to TikTok.</p>
+                        <div class="t-stats">
+                            <div class="stat-item">
+                                <div class="stat-row"><span>AI videos</span></div>
+                                <div class="segments"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span></div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-row"><span>Workflow design</span></div>
+                                <div class="segments"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span></div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-row"><span>Marketing</span></div>
+                                <div class="segments"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span></span></div>
+                            </div>
+                        </div>
+                        <a href="image.1/6jjj.png" target="_blank" rel="noopener noreferrer" class="view-image btn-view">View project ↗</a>
+                    </article>
+
+                    <article class="t-card">
+                        <div class="t-card-header">
+                            <div class="t-avatar" aria-hidden="true">M</div>
+                            <div class="t-user-info">
+                                <h3>Michael Chen</h3>
+                                <p>Operations Manager, DataSync Solutions</p>
+                                <span class="t-status">Verified project</span>
+                            </div>
+                        </div>
+                        <p class="t-desc">The custom n8n integration built between our CRM and project management tools eliminated data silos and manual copy-paste work.</p>
+                        <div class="t-stats">
+                            <div class="stat-item">
+                                <div class="stat-row"><span>CRM integration</span></div>
+                                <div class="segments"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span></div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-row"><span>Workflow design</span></div>
+                                <div class="segments"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span></div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-row"><span>Data processing</span></div>
+                                <div class="segments"><span class="active"></span><span class="active"></span><span class="active"></span><span class="active"></span><span></span></div>
+                            </div>
+                        </div>
+                        <a href="image.1/Screenshot at Mar 17 13-09-14.png" target="_blank" rel="noopener noreferrer" class="view-image btn-view">View project ↗</a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="projectModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalCaption" hidden>
+        <button type="button" class="close-modal" aria-label="Close preview">&times;</button>
+        <div class="modal-content-inner">
+            <img class="modal-content" id="imgFull" alt="Project screenshot preview">
+            <p id="modalCaption" class="modal-caption">Workflow screenshot</p>
+        </div>
+    </div>
+
+    <section class="contact-fullscreen reveal" id="contact">
+        <div class="main-container">
+            <div class="content-grid">
+                <div class="info-column">
+                    <h2 class="hero-title">Let's work <span class="text-brand">together</span></h2>
+                    <p class="hero-subtitle">Have a project in mind? Get in touch and let's build automation that saves time and scales.</p>
+
+                    <div class="contact-list-refined">
+                        <div class="contact-row-item">
+                            <div class="icon-circle-small"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                            <div class="text-group">
+                                <span class="label-dim">Email</span>
+                                <a href="mailto:mdasadul.qa@gmail.com" class="value-link">mdasadul.qa@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-row-item">
+                            <div class="icon-circle-small"><i class="fab fa-linkedin-in" aria-hidden="true"></i></div>
+                            <div class="text-group">
+                                <span class="label-dim">LinkedIn</span>
+                                <a href="https://www.linkedin.com/in/md-asadul-haque-80b2072b3/" target="_blank" rel="noopener noreferrer" class="value-link">md-asadul-haque</a>
+                            </div>
+                        </div>
+                        <div class="contact-row-item">
+                            <div class="icon-circle-small"><i class="fab fa-facebook-f" aria-hidden="true"></i></div>
+                            <div class="text-group">
+                                <span class="label-dim">Facebook</span>
+                                <a href="https://www.facebook.com/me.asadul387/" target="_blank" rel="noopener noreferrer" class="value-link">me.asadul387</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-wrapper">
+                    <div class="form-card-dark">
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="335333cd-88fb-4b54-b924-ac81723de52d">
+
+                            <div class="form-split">
+                                <div class="field-box">
+                                    <label for="field-name">Name <span>*</span></label>
+                                    <input id="field-name" type="text" name="name" placeholder="Your name" required autocomplete="name">
+                                </div>
+                                <div class="field-box">
+                                    <label for="field-email">Email <span>*</span></label>
+                                    <input id="field-email" type="email" name="email" placeholder="you@email.com" required autocomplete="email">
+                                </div>
+                            </div>
+                            <div class="field-box">
+                                <label for="field-subject">Subject <span>*</span></label>
+                                <input id="field-subject" type="text" name="subject" placeholder="Project inquiry" required>
+                            </div>
+                            <div class="field-box">
+                                <label for="field-message">Message <span>*</span></label>
+                                <textarea id="field-message" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+                            </div>
+                            <button type="submit" class="red-pill-button">
+                                Send message <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="modern-footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="footer-logo">Asad<span>.</span></div>
+                    <p class="footer-description">
+                        Helping businesses automate workflows with n8n, Make.com, and Zapier—custom solutions that save time, reduce errors, and scale operations.
+                    </p>
+                    <div class="social-icons-only">
+                        <a href="https://www.linkedin.com/in/md-asadul-haque-80b2072b3/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="https://www.facebook.com/me.asadul387/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+                <nav class="footer-nav" aria-label="Footer">
+                    <h4 class="nav-title">Navigation</h4>
+                    <ul class="footer-nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Asad. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
