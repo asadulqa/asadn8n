@@ -50,17 +50,35 @@
         var navToggle = document.getElementById("navToggle");
         var navMenu = document.getElementById("navMenu");
 
+        var navScrim = document.getElementById("navScrim");
+
         function setNavOpen(open) {
             if (!nav || !navToggle) return;
             nav.classList.toggle("is-open", open);
+            document.body.classList.toggle("menu-open", open);
             navToggle.setAttribute("aria-expanded", open ? "true" : "false");
             navToggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
             document.body.style.overflow = open ? "hidden" : "";
+            if (navScrim) {
+                if (open) {
+                    navScrim.removeAttribute("hidden");
+                    navScrim.setAttribute("aria-hidden", "false");
+                } else {
+                    navScrim.setAttribute("hidden", "");
+                    navScrim.setAttribute("aria-hidden", "true");
+                }
+            }
         }
 
         if (navToggle && nav) {
             navToggle.addEventListener("click", function () {
                 setNavOpen(!nav.classList.contains("is-open"));
+            });
+        }
+
+        if (navScrim) {
+            navScrim.addEventListener("click", function () {
+                setNavOpen(false);
             });
         }
 
@@ -181,8 +199,13 @@
         }
 
         document.addEventListener("keydown", function (e) {
-            if (e.key === "Escape" && modal && modal.classList.contains("is-open")) {
+            if (e.key !== "Escape") return;
+            if (modal && modal.classList.contains("is-open")) {
                 closeModal();
+                return;
+            }
+            if (nav && nav.classList.contains("is-open")) {
+                setNavOpen(false);
             }
         });
 
